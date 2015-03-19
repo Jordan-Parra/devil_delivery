@@ -14,4 +14,14 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "jumbotron"
+@import "jumbotron";
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+    border: 1px solid gray;
+    
+    div a {
+        margin: 30px;
+    }
+}
