@@ -29,10 +29,10 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: devil_delivery
+  username: ubuntu
 
   # The password associated with the postgres role (username).
-  #password:
+  password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -78,8 +78,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: devil_delivery_production
-  username: devil_delivery
-  password: <%= ENV['DEVIL_DELIVERY_DATABASE_PASSWORD'] %>
+# production:
+#   <<: *default
+#   database: devil_delivery_production
+#   username: devil_delivery
+#   password: <%= ENV['DEVIL_DELIVERY_DATABASE_PASSWORD'] %>
