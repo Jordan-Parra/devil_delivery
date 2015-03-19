@@ -8,8 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="container">
+    <header>
+      <%= render 'layouts/navigation' %>
+    </header>
+    <main role="main">
+      <%= yield %>
+    </main>
+  </div>
 </body>
 </html>
